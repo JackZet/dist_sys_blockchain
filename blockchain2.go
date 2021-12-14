@@ -1,3 +1,8 @@
+/*
+Created: 01/11/2019
+Last updated: 11-12-2019
+*/
+
 package main
 
 import (
@@ -526,6 +531,9 @@ func dec(key string, isPublicKey bool) (*PublicKey, *PrivateKey) {
 	return nil, unmarshalledKey
 }
 
+/*
+	NOTE: Should rewrite this function to not have nested if statements
+*/
 func peerWrite() {
 	reader := bufio.NewReader(os.Stdin)
 	for {
